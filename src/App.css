@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+  font-family: 'Raleway';
+}
+.profile-head{
+  display: flex;
+  width:100%;
+  align-items: center;
+}
+.profile-head-info{
+  font-size: 30px;
+  text-align: center;
+}
+.progress-bar {
+    position: fixed;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: black;
+    transform-origin: 0%;
+  }
+  #socials-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+  }
+  .btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    text-align: center;
+    margin-top: 90px;
+  }
+  .home-btn{
+    margin-top: 0px;
+  }
+  .btn {
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 1rem;
+    width: 10.0rem;
+    border-radius: 20rem;
+    display: flex;
+    font-size: 15px;
+    gap:5px;
+    
+  }
+  
+  .btn-color-1,
+  .btn-color-2 {
+    border: rgb(53, 53, 53) 0.1rem solid;
+  }
+  
+  .btn-color-1:hover,
+  .btn-color-2:hover {
+    cursor: pointer;
+  }
+  
+  .btn-color-1,
+  .btn-color-2:hover {
+    background: rgb(0, 0, 0);
+    color: white;
+  }
+  
+  .btn-color-1:hover {
+    background: rgb(255, 255, 255);
+    color:#111;
+  }
+  
+  .btn-color-2 {
+    background: none;
+  }
+  
+  .btn-color-2:hover {
+    border: rgb(255, 255, 255) 0.1rem solid;
+  }
+  
+  
+  .icon {
+    cursor: pointer;
+    height: 2rem;
+  }
+  section {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    padding: 50px;
+  }
+  .profile-head{
+    height:85vh;
+    margin-left:100px;
+    width:100%;
+    
+  }
+  section span {
+    display: block;
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  
+  circle,
+rect,
+line {
+  stroke-width: 30px;
+  stroke-linecap: round;
+  fill: transparent;
+}
+@media (max-width:600px) {
+  .profile-head{
+    display: flex;
+    flex-direction: column-reverse;
+  
+  }
+  .profile-head-info{
+    font-size: 20px;
+    padding-right: 200px;
+    width:100%;
+    padding-bottom: 2px;
+  }
+  .profile-pic-head{
+    width:100%;
+  height: 450px;
+  padding-right:100px;
+  }
+  
+}
+/*.............About................*/
+.about-info{
+  width:800px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.about-techologies{
+  display: flex;
+  margin:20px;
+}
+@media (max-width:600px) {
+  .about-info{
+    font-size: 13px;
+    width:100%;
+  }
+  .about-techologies{
+    display: grid;
+    grid: 150px / auto auto auto;
+   
+  }
+}
+/*............projects..............*/
+.projects-box{
+  padding-left: 3rem;
+}
+.project-container{
+  height:400px;
+  width:900px;
+ margin-bottom: 20px;
+  display:flex;
+  justify-content: space-between;
+  border:2px solid #F0F0F0;
+  border-radius: 10px;
+}
+.project-container:hover{
+  box-shadow: var(--shadow-6);
+}
+.project-info{
+  text-align: center;
+  width:50%;
+  padding-top: 40px;
+  font-weight: 400;
+  font-size: 15px;
+}
+.project-image{
+  padding-top:50px;
+}
+.project-image img{
+  
+width:450px;
+height: 300px;
+border-radius: 10px;
+}
+.project-btn{
+  
+  width:130px;
+  text-align: center;
+  margin: 0px;
+  padding:0px;
+  padding-top:10px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+}
+@media (max-width:600px) {
+  .project-container{
+    width:450px;
+  display: flex;
+  flex-direction: column;
+    margin:0px;
+    height:500px;
+    justify-content: space-around;
+    margin-bottom: 5px;
+  }
+  .projects-box{
+    padding-left: 0;
+    gap:2rem;
+  }
+  .project-image img{
+    width:440px;
+    height:250px;
+   
+  }
+  .project-image{
+    padding: 0px;
+    
+  }
+  .project-info{
+    font-size: 10px;
+    padding-bottom: 25px;
+    width:100%;
+   
+  }
+  .reverse-container{
+    flex-direction: column-reverse;
+  }
+  .btn-container {
+
+    margin-top: 0px;
+
+  }
+  
+}
+/*............contact........*/
+.contact-info-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 1rem;
+  text-decoration: none;
+}
+
+.contact-info-container p {
+  font-size: larger;
+}
+.contact-info-container a {
+  text-decoration: none;
+  color:#111
+}
+
+.contact-icon {
+  cursor: default;
+}
+
+.email-icon {
+  height: 2.5rem;
+}
+.bottom-navbar{
+  margin-left: 45px;
+  width:300px;
+  border:2px solid black;
+  border-radius: 30px;
+  box-shadow: var(--shadow-6);
+}
+.bottom-navbar ul{
+  display: flex;
+  gap:40px;
+  list-style-type: none;
+}
+
