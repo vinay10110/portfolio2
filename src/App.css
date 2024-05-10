@@ -156,7 +156,7 @@ line {
 .project-container{
   height:400px;
   width:900px;
- margin-bottom: 20px;
+ margin-bottom: 30px;
   display:flex;
   justify-content: space-between;
   border:2px solid #F0F0F0;
@@ -193,21 +193,22 @@ border-radius: 10px;
 }
 @media (max-width:600px) {
   .project-container{
-    width:450px;
+    width:380px;
   display: flex;
   flex-direction: column;
     margin:0px;
-    height:500px;
+    height:450px;
     justify-content: space-around;
     margin-bottom: 5px;
+    
   }
   .projects-box{
     padding-left: 0;
     gap:2rem;
   }
   .project-image img{
-    width:440px;
-    height:250px;
+    width:370px;
+    height:200px;
    
   }
   .project-image{
